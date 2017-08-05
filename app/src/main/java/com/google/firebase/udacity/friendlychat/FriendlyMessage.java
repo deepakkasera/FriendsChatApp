@@ -15,6 +15,8 @@
  */
 package com.google.firebase.udacity.friendlychat;
 
+
+//Plain Old Java Object (POJO)
 public class FriendlyMessage {
 
     private String text;
