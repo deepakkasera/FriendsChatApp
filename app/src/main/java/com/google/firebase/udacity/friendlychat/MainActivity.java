@@ -289,7 +289,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void detachDatabaseReadListener(){
-        mMessagesDatabaseReference.removeEventListener(mChildEventListener);
+        if(mChildEventListener != null){
+            mMessagesDatabaseReference.removeEventListener(mChildEventListener);
+        }
     }
 
     public void onSignedInInitialize(String username){
